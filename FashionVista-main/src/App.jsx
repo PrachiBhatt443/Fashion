@@ -11,6 +11,7 @@ import About from "./pages/About";
 import Resource from "./pages/Resource";
 import Contact from "./pages/Contact";
 import Trend from "../src/components/Trend";
+import FashionAnalyzer from "./components/FashionAnalyzer";
 function App() {
   const location = useLocation();
   const hideNavbarFooter = ["/login", "/register"].includes(location.pathname);
@@ -27,6 +28,7 @@ function App() {
         <Route exact path="/resources" element={<Resource />} />
         <Route exact path="/contact" element={<Contact />} />
         <Route exact path="/trend" element={<Trend />} />
+        <Route exact path="/prediction" element={<FashionAnalyzer />} />
       </Routes>
       <Toaster />
       {!hideNavbarFooter && <Footer />}

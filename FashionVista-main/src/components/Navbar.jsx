@@ -50,6 +50,9 @@ function Navbar() {
               <Link to="/blog" className="hover:bg-[#C29B77] duration-200 px-3 py-2 hover:text-white">
                 Blog
               </Link>
+              <Link to="/prediction" className="hover:bg-[#C29B77] duration-200 px-3 py-2 hover:text-white">
+                Prediction
+              </Link>
             </ul>
             <div className="md:hidden" onClick={() => setShow(!show)}>
               {show ? <IoCloseSharp size={24} /> : <AiOutlineMenu size={24} />}
